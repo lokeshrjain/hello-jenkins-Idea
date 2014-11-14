@@ -1,7 +1,7 @@
 #!/bin/sh
  
 ssh clinic@178.62.80.221 <<EOF
-  cd ~/hello-jenkins-idea
+  cd ~/hello-jenkins-Idea
   git pull
   npm install --production
   forever restartall
