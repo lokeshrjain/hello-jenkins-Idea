@@ -1,0 +1,9 @@
+#!/bin/sh
+ 
+ssh clinic@178.62.80.221 <<EOF
+  cd ~/hello-jenkins-idea
+  git pull
+  npm install --production
+  forever restartall
+  exit
+EOF
